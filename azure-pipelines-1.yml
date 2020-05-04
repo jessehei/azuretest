@@ -44,6 +44,10 @@ stages:
 
     - publish: $(Build.ArtifactStagingDirectory)
       artifact: drop
+    - task: VSTest@2
+      inputs:
+        testSelector: 'testRun'
+        searchFolder: '$(System.DefaultWorkingDirectory)'
 
 - stage: Deploy
   displayName: Deploy stage
