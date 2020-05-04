@@ -23,7 +23,7 @@ public class JUnitMeasureTest {
     public void isGreaterTest() {
         System.out.println("Test");
         JUnitMeasure measureTest = new JUnitMeasure();
-        assertTrue("Num 1 is greater than Num 2", measureTest.isGreater(4, 3));
+        assertTrue("Num 1 is greater than Num 2", measureTest.isGreater(6, 3));
     }
  
     @After
